@@ -61,6 +61,12 @@ Recipes
     <td><tt>jboss-fuse-6.0.0.redhat-024</tt></td>
   </tr>
   <tr>
+    <td><tt>['fuse']['extraction_folder']</tt></td>
+    <td>string</td>
+    <td>The folder within the Fuse archive containing application files</td>
+    <td><tt>['fuse']['filename']</tt></td>
+  </tr>
+  <tr>
     <td><tt>['fuse']['base']['url']</tt></td>
     <td>string</td>
     <td>url base for download Jboss Fuse</td>

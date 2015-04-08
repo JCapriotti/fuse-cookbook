@@ -44,7 +44,7 @@ execute 'fuse_extract' do
   cwd Chef::Config[:file_cache_path]
   command "unzip #{node['fuse']['filename']}.zip -d #{node['fuse']['dir']}"
   action :run
-  not_if { ::Dir.exist?("#{node['fuse']['dir']}/#{node['fuse']['filename']}") }
+  not_if { ::Dir.exist?("#{node['fuse']['home']}") }
 end
 
 template "#{node['fuse']['etc']}/#{node['fuse']['users_properties']}" do
